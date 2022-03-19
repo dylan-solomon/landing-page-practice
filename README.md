@@ -5,3 +5,5 @@ This is another practice website I created using flex. In this site I learned ho
 I also learned how to use flex: 1;, as I needed to evenly space boxes within a section of my site.
 
 I further improved my knowledge of media queries on this site, adding a variety of queries to ensure spacing and sizing was accurate for various size screens.
+
+I used this website as a template for this webpage: https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b
