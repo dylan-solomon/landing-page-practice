@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto' arial, sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/***************/
+/***HEADER******/
+/***************/
+
+
+header {
+    height: 50vh;
+    background-image: linear-gradient(to bottom, rgba(59, 59, 59, 0.6), rgba(59, 59, 59, 0.6)), url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+}
+
+header h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    max-width: 80vw;
+    text-align: center;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    max-width: 70%;
+}
+
+header button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4d4c4c;
+    color: white;
+    font-size: 1.2rem;
+}
+
+header button:hover {
+    background-color: #1f1f1f;
+    border: #1f1f1f;
+    cursor: pointer;
+}
+
+/***************/
+/***ABOUT*******/
+/***************/
+
+.about {
+    background-color: #b9b9b9;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.about h2 {
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.about p {
+    margin: auto;
+    column-count: 2;
+    max-width: 80%;
+    column-gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+/******************/
+/***FEATURES*******/
+/*****************/
+
+.features {
+    background-color: #2b2b2b;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+
+    margin: .25rem;
+    padding: 2rem;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h3 {
+    margin: 1rem auto;
+}
+
+/**********************/
+/***TESTIMONIAL*******/
+/*********************/
+
+.testimonial {
+    background-color: #b9b9b9;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.testimonial h2 {
+    text-align: center;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.testimonial p {
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 2rem;
+}
+
+/**************/
+/***SPLIT*****/
+/*************/
+
+.split {
+    display: flex;
+}
+
+.left {
+    background-color: blue;
+}
+
+.right {
+    background-color: orange;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.left h3,
+.right h3 {
+    margin-bottom: 1rem;
+}
+
+.left p,
+.right p {
+    padding: 1rem;
+}
+
+
+/**************/
+/***FOOTER*****/
+/**************/
+
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+
+/*******************/
+/***MEDIA QUERIES***/
+/*******************/
+
+@media (max-width: 853px) {
+    header {
+        padding: 5vh 8vh;
+        height: 40vh;
+    }
+    
+    header h1 {
+        padding-bottom: 1rem;
+    }
+
+    header p {
+        padding-bottom: 2rem;
+    }
+
+    .about {
+        padding: 1rem 2rem
+    }
+
+    .box {
+        padding: .7rem;
+    }
+}
+
+@media (max-width: 654px) {
+    header {
+        max-width: 90vh;
+    }
+    header p {
+        padding-bottom: 1rem;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .box {
+        min-width: 30%;
+        margin: 1rem 5rem;
+    }
+
+    .testimonial {
+        padding: 1rem 1.5rem;
+    }
+
+    .left, .right, .left h3, .right h3 {
+        padding: 1rem;
+    }
+
+    .left h3, .right h3 {
+        margin-bottom: .5rem;
+    }
+
+    .left p, .right p {
+        padding: .5rem;
+    }
+}
+
+@media (max-width: 567px) {
+    header {
+        padding: 4vh;
+    }
+    header h1,
+    header p {
+        max-width: 95vh;
+
+    }
+    footer {
+        flex-direction: column;
+        padding: .5rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 2vh;
+    }
+}
+
+@media (max-width: 395px) {
+    header {
+        height: 45vh;
+    }
+}
